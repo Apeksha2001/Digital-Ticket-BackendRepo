@@ -47,7 +47,7 @@ exports.getOneBusInfo = (req, res) => {
     Bus.findById(req.params.id)
     .then(data => {
         res.status(200).json({
-            course: data,
+            Bus: data,
             message: 'Data fetched successfully!!'
         });
     })
@@ -73,7 +73,7 @@ exports.updateBusdetails= (req, res) => {
     })      
         .then(data => {
             res.status(200).json({
-                course: data,
+                Bus: data,
                 message: 'Data Updated Successfully!!'
             });
         })
@@ -97,7 +97,7 @@ exports.deleteBusDetails = (req, res) => {
         Bus.findByIdAndDelete(req.params.id)
         .then(data => {
             res.status(200).json({
-                course: data,
+                Bus: data,
                 message: 'Data deleted successfully!!'
             });
         })

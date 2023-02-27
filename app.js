@@ -4,12 +4,14 @@ const mongoose= require('mongoose');
 const morgan=require('morgan');
 const bodyParser=require('body-parser');
 const busRoutes=require('./routes/bus.route');
+const ticketRoutes=require('./routes/ticket.route');
 
 var app = express();
 app.use(cors());
 app.use(express.json());
 
 app.use('/buses',busRoutes);
+app.use('/ticket',ticketRoutes);
 
 
 app.use(morgan('dev'));
