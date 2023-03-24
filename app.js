@@ -5,13 +5,19 @@ const morgan=require('morgan');
 const bodyParser=require('body-parser');
 const busRoutes=require('./routes/bus.route');
 const ticketRoutes=require('./routes/ticket.route');
+const stopRoutes=require('./routes/stop.route');
+const bookingRoutes=require('./routes/booking.route');
 
 var app = express();
 app.use(cors());
 app.use(express.json());
 
+
+
+app.use('/stop',stopRoutes);
 app.use('/buses',busRoutes);
 app.use('/ticket',ticketRoutes);
+app.use('/booking',bookingRoutes);
 
 
 app.use(morgan('dev'));

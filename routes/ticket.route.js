@@ -13,7 +13,7 @@ router.get('/getTicket',TicketController.getTicketDetails);
 router.get('/getOneTicketDetail/:id',TicketController.getOneTicketInfo);
 
 //Deleting Ticket Details
-
++
 router.delete('/deleteTicket/:id',TicketController.deleteTicketDetails)
 
 module.exports = router;

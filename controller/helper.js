@@ -1,4 +1,8 @@
 // Helper function to calculate the price based on the distance traveled
+// const mongoose = require('mongoose');;
+// const Bus = require('../models/bus');
+
+
 exports.calculatePrice=(distance)=> {
     const basePrice = 50; // base price for a ticket
     const distanceThreshold = 100; // distance threshold for applying additional charges
@@ -12,24 +16,14 @@ exports.calculatePrice=(distance)=> {
     }
     return price;
   }
- /* 
-  exports.calculateDistance=async (origin,destination)=>{
-    const apiKey = 'AIzaSyCAPRZELp_QveSM718g5dhf_X1QQfuuqY0';
-    const Origin = origin;
-    const Destination = destination;
-    
-  
-      // Geocode the origin and destination addresses to get their coordinates
-      const originResult = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?${qs.stringify({ address: Origin, key: apiKey })}`);
-      const destinationResult = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?${qs.stringify({ address: Destination, key: apiKey })}`);
-  
-      // Extract the coordinates from the geocoding results
-      const originLocation = originResult.data.results[0].geometry.location;
-      const destinationLocation = destinationResult.data.results[0].geometry.location;
-  
-      // Calculate the distance between the two locations using the Haversine formula
-      const distance = calculateDistance(originLocation, destinationLocation);
-  
-      // Send the distance as the response
-      return distance;
-  }*/
+ 
+  // exports.checkBusDetails=(busId)=>{
+  //   const isValidBusId = mongoose.Types.ObjectId.isValid(busId);
+  //   if (!isValidBusId) {
+  //     return res.status(400).json({ message: 'Invalid bus ID' });
+  //   }
+  //   const bus = Bus.findById(busId);
+  //   if (!bus) {
+  //     return res.status(404).json({ message: 'Bus not found' });
+  //   }
+  // }

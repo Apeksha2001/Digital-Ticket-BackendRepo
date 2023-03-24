@@ -2,12 +2,10 @@ const Bus= require("../models/bus");
 
 
 //Add details about bus
-exports.postBusDetails=(req,res,next) => {
+exports.postBusDetails=(req,res) => {
     const bus=new Bus({
-        Bus_id:req.body.Bus_id,
-        Bus_Type:req.body.Bus_Type,
-        Source : req.body.Source,
-        Destination:req.body.Destination,
+        busType:req.body.busType,
+        stops:req.body.stops,
         
     });
     bus.save()

@@ -1,14 +1,18 @@
+const mongoose=require("mongoose");
 const Ticket=require('../models/ticket');
-const Helper=require('./helper')
+const Helper=require('./helper');
+const Bus=require('../models/bus');
 
 exports.postTicketDetails=(req,res,next) => {
-    const price=Helper.calculatePrice(req.body.distance)
+    const price=Helper.calculatePrice(req.body.distance);
+    //const busId=Helper.checkBusDetails(req.body.busId);
 
     const ticket=new Ticket({
 
-        origin : req.body.origin,
+        source : req.body.source,
         destination:req.body.destination,
         price:price,
+        createdAt:req.body.createdAt,
         distance:req.body.distance
   
    
@@ -17,7 +21,7 @@ exports.postTicketDetails=(req,res,next) => {
     ticket.save()
     .then( (success,result) =>{
         if(success){
-            res.send('Details added successfully!!');
+            res.send('Ticket Details added successfully!!');
         }else{
             res.send('Some error occured');
         }
