@@ -9,4 +9,4 @@ RUN npm install
 COPY . .
 EXPOSE 4500
 
-CMD [ "node", "server.js" ]
+CMD [ "node", "--watch","server.js" ]

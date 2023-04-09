@@ -1,26 +1,27 @@
-const express = require("express");
-const cors = require("cors");
-const mongoose = require("mongoose");
-const morgan = require("morgan");
-const bodyParser = require("body-parser");
+import express, { json } from "express";
+import cors from "cors";
+import { set, connect } from "mongoose";
+import morgan from "morgan";
+import bodyParser from "body-parser";
+import apiRouter from "./routes/api.route.js";
 
 const app = express();
 app.use(cors());
-app.use(express.json());
+app.use(json());
 
-
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   return res.send("<h1>Hello World</h1>");
 });
+
+app.use("/api", apiRouter);
 
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-mongoose.set("strictQuery", false);
+set("strictQuery", false);
 const db = process.env.DATABASE;
-mongoose
-  .connect(db, {
+connect(db, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -43,4 +44,4 @@ app.use((error, req, res, next) => {
     message: error.message,
   });
 });
-module.exports = app;
+export default app;
