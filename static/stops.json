@@ -1,0 +1,32 @@
+{
+  "stop_a": {
+    "name": "Bakuri Phata",
+    "type": "BUS_STOP",
+    "vehicleMapping": ["bus_a"]
+  },
+  "stop_b": {
+    "name": "Kharadi Bypass",
+    "type": "BUS_STOP",
+    "vehicleMapping": ["bus_a"]
+  },
+  "stop_c": {
+    "name": "Pune Station",
+    "type": "BUS_STOP",
+    "vehicleMapping": ["bus_a", "bus_b"]
+  },
+  "stop_d": {
+    "name": "Manpa",
+    "type": "BUS_STOP",
+    "vehicleMapping": ["bus_b"]
+  },
+  "stop_e": {
+    "name": "Pune Station",
+    "type": "METRO_STOP",
+    "vehicleMapping": ["metro_a"]
+  },
+  "stop_f": {
+    "name": "Shivaji Nagar",
+    "type": "METRO_STOP",
+    "vehicleMapping": ["metro_a"]
+  }
+}

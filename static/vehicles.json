@@ -1,0 +1,51 @@
+{
+  "bus_a": {
+    "name": "Station bus",
+    "type": "BUS",
+    "seats": 60,
+    "stops": [
+      {
+        "id": "stop_a",
+        "time": "07:30:00"
+      },
+      {
+        "id": "stop_b",
+        "time": "08:00:00"
+      },
+      {
+        "id": "stop_c",
+        "time": "08:40:00"
+      }
+    ]
+  },
+  "bus_b": {
+    "name": "Manpa to Station bus",
+    "type": "BUS",
+    "seats": 50,
+    "stops": [
+      {
+        "id": "stop_d",
+        "time": "11:30:00"
+      },
+      {
+        "id": "stop_c",
+        "time": "13:00:00"
+      }
+    ]
+  },
+  "metro_a": {
+    "name": "Metro",
+    "type": "METRO",
+    "seats": 120,
+    "stops": [
+      {
+        "id": "stop_e",
+        "time": "09:30:00"
+      },
+      {
+        "id": "stop_f",
+        "time": "12:00:00"
+      }
+    ]
+  }
+}

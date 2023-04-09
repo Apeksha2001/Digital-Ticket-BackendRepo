@@ -8,6 +8,8 @@ import apiRouter from "./routes/api.route.js";
 const app = express();
 app.use(cors());
 app.use(json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
   return res.send("<h1>Hello World</h1>");
@@ -16,8 +18,6 @@ app.get("/", (req, res) => {
 app.use("/api", apiRouter);
 
 app.use(morgan("dev"));
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
 
 set("strictQuery", false);
 const db = process.env.DATABASE;
