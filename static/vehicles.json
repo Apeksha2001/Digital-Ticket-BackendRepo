@@ -33,6 +33,132 @@
       }
     ]
   },
+
+
+  "bus_c": {
+    "name": "Shirur to Shikrapur",
+    "type": "BUS",
+    "seats": 55,
+    "stops": [
+      {
+        "id": "stop_g",
+        "time": "10:00:00"
+      },
+      {
+        "id": "stop_h",
+        "time": "10:35:00"
+      },
+      {
+        "id": "stop_k",
+        "time": "11:00:00"
+      }
+    ]
+  },
+
+  "bus_d": {
+    "name": "Shikrapur to Wagholi",
+    "type": "BUS",
+    "seats": 65,
+    "stops": [
+      {
+        "id": "stop_k",
+        "time": "12:00:00"
+      },
+      {
+        "id": "stop_l",
+        "time": "12:35:00"
+      },
+      {
+        "id": "stop_m",
+        "time": "01:15:00"
+      },
+      {
+        "id": "stop_a",
+        "time": "01:15:00"
+      }
+    ]
+  },
+
+  "bus_e": {
+    "name": "Pune Station to Ahmadnagar",
+    "type": "BUS",
+    "seats": 35,
+    "stops": [
+      {
+        "id": "stop_c",
+        "time": "09:00:00"
+      },
+      {
+        "id": "stop_a",
+        "time": "09:35:00"
+      },
+      {
+        "id": "stop_k",
+        "time": "09:55:00"
+      },
+      {
+        "id": "stop_g",
+        "time": "10:20:00"
+      },
+      {
+        "id": "stop_n",
+        "time": "11:20:00"
+      },
+      {
+        "id": "stop_o",
+        "time": "12:20:00"
+      }
+      
+    ]
+  },
+
+  "bus_f": {
+    "name": "Ranjangaon to Koregaon Bhima",
+    "type": "BUS",
+    "seats": 35,
+    "stops": [
+      {
+        "id": "stop_h",
+        "time": "02:07:00"
+      },
+      {
+        "id": "stop_l",
+        "time": "03:03:00"
+      }   
+    ]
+  },
+  "bus_g": {
+    "name": "Supe to Lonikand",
+    "type": "BUS",
+    "seats": 35,
+    "stops": [
+      {
+        "id": "stop_n",
+        "time": "08:00:00"
+      },
+      {
+        "id": "stop_g",
+        "time": "09:00:00"
+      },
+      {
+        "id": "stop_h",
+        "time": "09:30:00"
+      },
+      {
+        "id": "stop_k",
+        "time": "09:50:00"
+      },
+      {
+        "id": "stop_m",
+        "time": "10:05:00"
+      }
+    ]
+  },
+
+
+
+
+
   "metro_a": {
     "name": "Metro",
     "type": "METRO",
@@ -47,5 +173,51 @@
         "time": "12:00:00"
       }
     ]
+  },
+  "metro_b": {
+    "name": "Metro Pune to Ahmadnagar ",
+    "type": "METRO",
+    "seats": 100,
+    "stops": [
+      {
+        "id": "stop_e",
+        "time": "09:00:00"
+      },
+      {
+        "id": "stop_p",
+        "time": "11:00:00"
+      }
+    ]
+  },
+  "metro_c": {
+    "name": "Metro Ahmadnagar to Shirdi ",
+    "type": "METRO",
+    "seats": 90,
+    "stops": [
+      {
+        "id": "stop_p",
+        "time": "01:00:00"
+      },
+      {
+        "id": "stop_q",
+        "time": "04:00:00"
+      }
+    ]
+  },
+  "metro_d": {
+    "name": "Metro Pune to Mumbai ",
+    "type": "METRO",
+    "seats": 95,
+    "stops": [
+      {
+        "id": "stop_e",
+        "time": "03:13:00"
+      },
+      {
+        "id": "stop_r",
+        "time": "06:38:00"
+      }
+    ]
   }
 }
+

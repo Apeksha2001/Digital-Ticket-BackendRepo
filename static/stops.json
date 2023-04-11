@@ -2,7 +2,7 @@
   "stop_a": {
     "name": "Bakuri Phata",
     "type": "BUS_STOP",
-    "vehicleMapping": ["bus_a"]
+    "vehicleMapping": ["bus_a","bus_d","bus_e"]
   },
   "stop_b": {
     "name": "Kharadi Bypass",
@@ -12,7 +12,7 @@
   "stop_c": {
     "name": "Pune Station",
     "type": "BUS_STOP",
-    "vehicleMapping": ["bus_a", "bus_b"]
+    "vehicleMapping": ["bus_a", "bus_b","bus_e"]
   },
   "stop_d": {
     "name": "Manpa",
@@ -22,11 +22,65 @@
   "stop_e": {
     "name": "Pune Station",
     "type": "METRO_STOP",
-    "vehicleMapping": ["metro_a"]
+    "vehicleMapping": ["metro_a","metro_b"]
   },
   "stop_f": {
     "name": "Shivaji Nagar",
     "type": "METRO_STOP",
     "vehicleMapping": ["metro_a"]
+  },
+  "stop_p": {
+    "name": "Ahmadnagar",
+    "type": "METRO_STOP",
+    "vehicleMapping": ["metro_b","metro_c","metro_d"]
+  },
+  "stop_q": {
+    "name": "Shirdi",
+    "type": "METRO_STOP",
+    "vehicleMapping": ["metro_c"]
+  },
+  "stop_r": {
+    "name": "Mumbai",
+    "type": "METRO_STOP",
+    "vehicleMapping": ["metro_d"]
+  },
+  
+
+
+
+  "stop_g": {
+    "name": "Shirur",
+    "type": "BUS_STOP",
+    "vehicleMapping": ["bus_c","bus_e","bus_g"]
+  },
+  "stop_h": {
+    "name": "Ranjangaon",
+    "type": "BUS_STOP",
+    "vehicleMapping": ["bus_c","bus_f","bus_g"]
+  },
+  "stop_k": {
+    "name": "Shikrapur",
+    "type": "BUS_STOP",
+    "vehicleMapping": ["bus_c","bus_d","bus_e","bus_g"]
+  },
+  "stop_l": {
+    "name": "Koregaon Bhima",
+    "type": "BUS_STOP",
+    "vehicleMapping": ["bus_d","bus_f"]
+  },
+  "stop_m": {
+    "name": "Lonikand",
+    "type": "BUS_STOP",
+    "vehicleMapping": ["bus_d","bus_g"]
+  },
+  "stop_n": {
+    "name": "Supe",
+    "type": "BUS_STOP",
+    "vehicleMapping": ["bus_e","bus_g"]
+  },
+  "stop_o": {
+    "name": "Ahmadnagar",
+    "type": "BUS_STOP",
+    "vehicleMapping": ["bus_e"]
   }
 }
